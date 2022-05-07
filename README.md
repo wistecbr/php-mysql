@@ -16,15 +16,18 @@ Também se quiserem reutilizar o modelo do php-login que fizemos anteriormente t
 ## Páginas PHP ( usando o html dentro do php )
 1) Criem uma página index 
 2) Criem uma página para listar: no comando de repetição já podemos definir nosso objeto 
+
 Ex.:  
 ```php
-for($i = 0; $i < count($filmes); $i++){
-   echo '<tr>';
-   echo '<td>'. $filmes[$i]['id'] .'</td>';
-   echo '<td>'. $filmes[$i]['nome'] .'</td>';
-   echo '<td>'. $filmes[$i]['ano'] .'</td>';
-   echo '</tr>';
-}
+<?php
+   for($i = 0; $i < count($filmes); $i++){
+      echo '<tr>';
+      echo '<td>'. $filmes[$i]['id'] .'</td>';
+      echo '<td>'. $filmes[$i]['nome'] .'</td>';
+      echo '<td>'. $filmes[$i]['ano'] .'</td>';
+      echo '</tr>';
+   }
+?>
 
 ```
 
